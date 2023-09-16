@@ -40,7 +40,7 @@ input {
 
 /* Bouton d'envoie */
 
-#btn {
+.validButton {
     background-color: #675afe;
     color: #ffffff;
     border: 1px solid #675afe;

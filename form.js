@@ -50,6 +50,13 @@ function validatePasswordField() {
 
         // Activer ou désactiver le bouton Soumettre
         submitButton.disabled = !passwordsMatch;
+
+        // Ajouter ou supprimer la classe 'validButton' en fonction de la validité du mot de passe
+        if (!submitButton.disabled) {
+            submitButton.classList.add('validButton');
+        } else {
+            submitButton.classList.remove('validButton');
+        }
     }
 
     myInput.addEventListener('keyup', validatePassword);
